@@ -6,7 +6,7 @@
     height: 5rem;
     background-color: transparent;
     opacity: 0;
-        animation: finish 10s ease-in forwards;
+        animation: finish 3s ease-in forwards;
         border-bottom: 1px solid #A33A62;
         background: linear-gradient(0deg, rgba(163,58,98,0.6671043417366946) 0%, rgba(163,58,98,0) 41%);
 
