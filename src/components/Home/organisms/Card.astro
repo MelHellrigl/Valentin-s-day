@@ -1,0 +1,37 @@
+---
+import styles from "./styles/card.module.css";
+---
+
+<div id="container" class={styles.container}>
+    <div class={styles.valentines}>
+        <div class={styles.envelope}></div>
+        <div class={styles.front}></div>
+        <div id="card" class={styles.card}>
+            <div class={styles.text}>My Love,</br>I Love You!</div>
+            <div class={styles.heart}></div>
+        </div>
+        <div class={styles.hearts}>
+            <div class={styles.one}></div>
+            <div class={styles.two}></div>
+            <div class={styles.three}></div>
+            <div class={styles.four}></div>
+            <div class={styles.five}></div>
+        </div>
+    </div>
+    <div class={styles.shadow}></div>
+</div>
+
+
+<script is="module">
+    document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('#container').addEventListener('mouseenter', function () {
+        document.querySelector('#card').style.transition = 'top 0.6s';
+        document.querySelector('#card').style.top = '-90px';
+    });
+
+    document.querySelector('#container').addEventListener('mouseleave', function () {
+        document.querySelector('#card').style.transition = 'top 0.6s';
+        document.querySelector('#card').style.top = '0';
+    });
+});
+</script>

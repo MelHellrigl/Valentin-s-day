@@ -1,0 +1,65 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 1rem;
+    min-height: 80vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* padding-top: 2rem; */
+}
+.section h1{
+    color: #A33A62;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Emilys Candy", serif;
+    font-weight: 700;
+	font-style: normal;
+}
+.section h2{
+    color: #688F96;
+    font-size: 1.5rem;
+    font-family: "Emilys Candy", serif;
+    font-weight: 500;
+    border-bottom: #688F96 solid 0.2rem;
+}
+.section p{
+    font-size: 1.5rem;
+    font-family: "Emilys Candy", serif;
+    font-weight: 500;
+    border-top: #688F96 solid 0.2rem;
+}
+
+.section img{
+	animation: heart 1s step-end infinite;
+}
+.section img:first-child{
+    animation-delay: 0.5s;
+}
+	@keyframes heart {
+		0% {
+			transform: rotate(-45deg);
+		}
+		50% {
+			transform: rotate(45deg);
+		}
+		100% {
+			transform: rotate(-45deg);
+		}
+    }
+
+    @media (max-width: 600px){
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            padding-top: 2rem;
+        }
+    }

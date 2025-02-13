@@ -1,0 +1,40 @@
+---
+import background from '../../assets/background.svg';
+import Home from './organisms/Home.astro';
+import Photos from './organisms/Photos.astro';
+import Spotify from './organisms/Spotify.astro';
+
+---
+<main>
+    <img id="background" src={background.src} alt="" fetchpriority="high" />
+    <Home />
+	<Photos />
+    <Spotify />
+</main>
+
+<style>
+    	main {
+		height: 100%;
+        min-height: 100vh;
+		display: flex;
+        flex-direction: column;
+		justify-content: center;
+		align-items: center;
+        opacity: 0;
+        animation: finish 3s ease-in forwards;
+	}
+    #background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(100px);
+	}
+    @keyframes finish {
+    50%, 100% {
+        opacity: 1;
+    }
+}
+</style>

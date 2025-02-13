@@ -1,0 +1,20 @@
+---
+import styles from "./nav.module.css";
+import message from "../../assets/love-message_6645943-2.webp"
+import photo from "../../assets/photos.png"
+import { Image } from 'astro:assets';
+---
+
+
+<header id="headerr" class={styles.header}>
+    <nav>
+        <a href="/" class={styles.message}>
+            <Image src={message} alt="Message" width={50} height={50} />
+        </a>
+        <a href="#photos" class={styles.photos}>
+            <Image src={photo} alt="Photos" width={45} height={45} />
+        </a>
+    </nav>
+</header>
+
+<script src="../Home/organisms/js/spotify.js"></script>

@@ -1,0 +1,90 @@
+---
+import styles from "./styles/photos.module.css";
+import './styles/photos.css';
+import photo1 from "../../../assets/slide/16.jpeg";
+import photo2 from "../../../assets/slide/15.jpeg";
+import photo3 from "../../../assets/slide/14.jpeg";
+import photo4 from "../../../assets/slide/13.jpeg";
+import photo6 from "../../../assets/slide/12.jpeg";
+import photo7 from "../../../assets/slide/11.jpeg";
+import photo8 from "../../../assets/slide/10.jpeg";
+import photo9 from "../../../assets/slide/9.jpeg";
+import photo10 from "../../../assets/slide/8.jpeg";
+import photo11 from "../../../assets/slide/7.jpeg";
+import photo12 from "../../../assets/slide/6.jpeg";
+import photo13 from "../../../assets/slide/4.jpeg";
+import photo14 from "../../../assets/slide/3.jpeg";
+import photo15 from "../../../assets/slide/2.jpeg";
+import photo16 from "../../../assets/slide/1.jpeg";
+import { Image } from 'astro:assets';
+---
+
+<section id="photos" class={styles.container}>
+    <div class={styles.content}>
+        <div>
+            <h2>Some of our moments </br>together saved in photos</h2>
+            <p>and I want there to be more!</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <Image src={photo1} alt={'photo1'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo2} alt={'photo2'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo3} alt={'photo3'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo4} alt={'photo4'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo6} alt={'photo6'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo7} alt={'photo7'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo8} alt={'photo8'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo9} alt={'photo9'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo10} alt={'photo10'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo11} alt={'photo11'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo12} alt={'photo12'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo13} alt={'photo13'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo14} alt={'photo14'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo15} alt={'photo15'} />
+              </div>
+              <div class="swiper-slide">
+                <Image src={photo16} alt={'photo16'} />
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+<!-- Initialize Swiper -->
+<script is:inline>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+  });
+</script>
+      
