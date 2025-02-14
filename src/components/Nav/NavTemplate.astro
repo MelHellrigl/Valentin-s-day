@@ -9,10 +9,10 @@ import { Image } from 'astro:assets';
 <header id="headerr" class={styles.header}>
     <nav>
         <a href="/" class={styles.message}>
-            <Image src={message} alt="Message" width={50} height={50} />
+            <Image src={message} alt="Message" width={50} height={50} loading={'eager'} />
         </a>
         <a href="#photos" class={styles.photos}>
-            <Image src={photo} alt="Photos" width={45} height={45} />
+            <Image src={photo} alt="Photos" width={45} height={45} loading={'eager'} />
         </a>
     </nav>
 </header>

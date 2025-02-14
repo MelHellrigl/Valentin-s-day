@@ -7,16 +7,17 @@ import './styles/spotify.css';
 
 <section class={`sidebar ${styles.spotify}`}>
     <div class="x sombra">
-        <Image src={song} alt="Song" width={50} height={50} />
+        <Image src={song} alt="Song" width={50} height={50} loading={'eager'} />
     </div>
     <div>
         <iframe 
         src="https://open.spotify.com/embed/playlist/5mfddh3OYtWczRWaTbYOh7?utm_source=generator" 
+        title="Playlist Valentine's Day"
         width="100%" 
         height="352"
         allowfullscreen="" 
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-        loading="lazy"></iframe>
+        loading="eager"></iframe>
     </div>
 </section>
 

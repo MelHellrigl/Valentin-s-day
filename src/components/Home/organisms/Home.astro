@@ -7,9 +7,9 @@ import Card from './Card.astro';
 
 <section class={styles.section}>
         <div class={styles.container}>
-            <Image src={heart} alt="Heart" width={50} height={50} />
+            <Image src={heart} alt="Heart" width={50} height={50} loading={'eager'} />
             <h1>Happy Valentine's day</h1>
-            <Image src={heart} alt="Heart" width={50} height={50} />
+            <Image src={heart} alt="Heart" width={50} height={50} loading={'eager'} />
         </div>
         <Card />
 </section>
